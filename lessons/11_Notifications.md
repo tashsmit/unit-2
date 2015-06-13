@@ -17,7 +17,13 @@ Notifications are tricky because they are displayed outside of your application.
 
 #### Notification Builder
 
+In order to create a `Notification` object, use the [`NotificationCompat.Builder`](http://developer.android.com/reference/android/support/v4/app/NotificationCompat.Builder.html). The notification information can be set up on the `Builder` object, and then the notification can be created by calling `.build()`. The Builder pattern is a common Android pattern.
+
+A Notification must include `setSmallIcon()`, `setContentTitle()` and `setContentText()`.
+
 ### Exercises (Morning)
+
+Using the app from the Do Now, have the application issue a notification when it's time for the reminder.
 
 ### Do Now (Afternoon)
 
@@ -30,6 +36,8 @@ Notifications are tricky because they are displayed outside of your application.
 #### Lock Screen
 
 #### Updating and Removing
+
+If a notification needs to be updated, you can use 
 
 #### Expanded Notifications
 
