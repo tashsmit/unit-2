@@ -39,9 +39,11 @@ A notification can trigger a variety of different actions. To set the Activity t
 
 ##### PendingIntent
 
-
+The `PendingIntent` object can be created using `PendingIntent.getActivity()`, `PendingIntent.getActivities()`, `PendingIntent.getBroadcast()` or `PendingIntent.getService()`. These methods take in an Intent object and Application Context.
 
 #### Lock Screen
+
+Notifications can be displayed on the lock screen. Using `setVisibility()` you can display the full notification on the lock screen using `VISIBILITY_PUBLIC`, not show the notification on the lock screen using `VISIBILITY_SECRET` and only show limited information using `VISIBILITY_PRIVATE`. If using a private notifcation, you can set up the lock screen version using `setPublicVersion()`.
 
 #### Updating and Removing
 
