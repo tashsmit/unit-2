@@ -13,6 +13,8 @@ Create a timer app. The app should take in some number of seconds before a "remi
 
 #### Notifications in Android
 
+Notifications are tricky because they are displayed outside of your application. Then notification drawer and notifications are controlled by the Android system. 
+
 #### Notification Builder
 
 ### Exercises (Morning)
@@ -31,7 +33,11 @@ Create a timer app. The app should take in some number of seconds before a "remi
 
 #### Expanded Notifications
 
+Notifications can be expanded to a larger view so that you can see more detailed info in the notification drawer. In order to expand notifications, you can use `NotificationCompat.Builder.setStyle()`, which takes in a layout that can be displayed in the expanded view.
+
 #### User Experience
+
+Notifcations have strict design guidelines since they appear outside the application. When creating notifications, be sure to look at the [notifications design guide](http://developer.android.com/design/patterns/notifications.html). Some other things to keep in mind is that users may turn off notifications or even uninstall an app; be mindful of how you use notifications in your app.
 
 ### Exercises (Afternoon)
 
@@ -40,3 +46,5 @@ Fork this [Meme Project](https://github.com/MadelynTav/MemeProject). If you alre
 ### Assessment
 
 ### Resources
+
+[Android Asset Studio](https://romannurik.github.io/AndroidAssetStudio/) 
