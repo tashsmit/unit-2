@@ -29,15 +29,17 @@ Using the app from the Do Now, have the application issue a notification when it
 
 ### Do Now (Afternoon)
 
-Modify your Do Now app so that when the user clicks on the notification, it opens up a new activity.
+Modify your Do Now app so that when the user clicks on the notification, it opens up the new activity.
 
 ### Lesson (Afternoon)
 
 #### Actions
 
-A notification can trigger a variety of different actions. To set the Activity that is opened 
+A notification can trigger a variety of different actions. To set the Activity that is opened, create a `PendingIntent` object. This object can then be passed to the `NotificationCompat.Builder` object with several different methods. Use the `setContentIntent()` method to set the Activity that gets called when the user clicks on the notification.
 
 ##### PendingIntent
+
+
 
 #### Lock Screen
 
