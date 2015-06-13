@@ -15,7 +15,7 @@ Create a timer app. The app should take in some number of seconds before a "remi
 
 Notifications are tricky because they are displayed outside of your application. Then notification drawer and notifications are controlled by the Android system.
 
-To trigger a notification, call `.notify()` on the `NotificationManager` object.
+To trigger a notification, call `.notify()` with a `Notification` object on the `NotificationManager` object.
 
 #### Notification Builder
 
