@@ -15,7 +15,7 @@ Create a timer app. The app should take in some number of seconds before a "remi
 
 Notifications are tricky because they are displayed outside of your application. Then notification drawer and notifications are controlled by the Android system.
 
-To trigger a notification, call `.notify()` on a `Notification` object.
+To trigger a notification, call `.notify()` on the `NotificationManager` object.
 
 #### Notification Builder
 
@@ -47,7 +47,7 @@ Notifications can be displayed on the lock screen. Using `setVisibility()` you c
 
 #### Updating and Removing
 
-If a notification needs to be updated, you can use 
+If a notification may need to be updated, use a notification ID when calling `.notify()`. You can then use this notification ID to call `.notify()` with the notification ID and the new Notification object..
 
 #### Expanded Notifications
 
