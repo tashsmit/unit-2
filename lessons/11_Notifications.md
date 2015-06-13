@@ -13,11 +13,13 @@ Create a timer app. The app should take in some number of seconds before a "remi
 
 #### Notifications in Android
 
-Notifications are tricky because they are displayed outside of your application. Then notification drawer and notifications are controlled by the Android system. 
+Notifications are tricky because they are displayed outside of your application. Then notification drawer and notifications are controlled by the Android system.
+
+To trigger a notification, call `.notify()` on a `Notification` object.
 
 #### Notification Builder
 
-In order to create a `Notification` object, use the [`NotificationCompat.Builder`](http://developer.android.com/reference/android/support/v4/app/NotificationCompat.Builder.html). The notification information can be set up on the `Builder` object, and then the notification can be created by calling `.build()`. The Builder pattern is a common Android pattern.
+In order to create a `Notification` object, use the [`NotificationCompat.Builder`](http://developer.android.com/reference/android/support/v4/app/NotificationCompat.Builder.html). The notification information can be set up on the `Builder` object, and then the notification can be created by calling `.build()`. The Builder pattern is a common Android pattern, so that you create immutable objects.
 
 A Notification must include `setSmallIcon()`, `setContentTitle()` and `setContentText()`.
 
@@ -27,9 +29,13 @@ Using the app from the Do Now, have the application issue a notification when it
 
 ### Do Now (Afternoon)
 
+Modify your Do Now app so that when the user clicks on the notification, it opens up a new activity.
+
 ### Lesson (Afternoon)
 
 #### Actions
+
+A notification can trigger a variety of different actions. To set the Activity that is opened 
 
 ##### PendingIntent
 
