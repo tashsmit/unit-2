@@ -59,9 +59,11 @@ Notifcations have strict design guidelines since they appear outside the applica
 
 ### Exercises (Afternoon)
 
-Fork this [Meme Project](https://github.com/MadelynTav/MemeProject). If you already have a fork of this project, work off a new branch. Add a notification that does **TODO**
+Fork this [Meme Project](https://github.com/MadelynTav/MemeProject). If you already have a fork of this project, work off a new branch. Add a feature that uploads the image to Dropbox in the background and sends you a notification when it's done.
 
 ### Assessment
+
+[Exit ticket](https://docs.google.com/forms/d/1a-gfjjsn35N-C6wrQU9y02vHoYLFaEfjUgD7J91n3rM/viewform?usp=send_form)
 
 ### Resources
 
